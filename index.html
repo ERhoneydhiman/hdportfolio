@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hd portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <ul class="side" style="list-style-type: none;">
+            <li id="x_btn_s" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="70"
+                        viewBox="0 -960 960 960" width="70">
+                        <path
+                            d="M257.846-231.384 232-257.846 453.538-480 232-702.154l25.846-26.462L480-506.462l222.154-222.154L728-702.154 506.462-480 728-257.846l-25.846 26.462L480-453.538 257.846-231.384Z" />
+                    </svg></a></li>
+            <li class="showonmobtab" onclick=hideSidebar()><a href="index.html">HOME</a></li>
+            <li class="showonmobtab"><a href="skills.html">SKILLS</a></li>
+            <li class="showonmobtab"><a href="projects.html">PROJECTS</a></li>
+            <li class="showonmobtab"><a href="edu.html">EDUCATION</a></li>
+            <li class="showonmobtab"><a href="social.html">SOCIAL</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <nav>
+            <div class="profile" onclick="showprofile()"><a href="#"><img src="icons8-user-menu-male-48.png"></a></div>
+
+            <ul class="nav">
+                <li class="hide-on-mob-tab"><a href="index.html">HOME</a></li>
+                <li class="hide-on-mob-tab"><a href="skills.html">SKILLS</a></li>
+                <li class="hide-on-mob-tab"><a href="projects.html">PROJECTS</a></li>
+                <li class="hide-on-mob-tab"><a href="edu.html">EDUCATION</a></li>
+                <li class="hide-on-mob-tab"><a href="social.html">SOCIAL</a></li>
+                <li id="barbtn" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="70"
+                        viewBox="0 -960 960 960" width="70">
+                        <path
+                            d="M166.154-286.154v-36.923h448.192v36.923H166.154ZM768-321.692 606.308-480 768-637.539l25.846 25.847L658.616-480l135.23 131.962L768-321.692ZM166.154-461.846v-36.923h335.692v36.923H166.154Zm0-175.077v-36.923h448.192v36.923H166.154Z" />
+                    </svg></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <div class="profilecontent">
+        <div id="x_btn_p" onclick="hideprofile()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="70"
+                    viewBox="0 -960 960 960" width="70">
+                    <path
+                        d="M257.846-231.384 232-257.846 453.538-480 232-702.154l25.846-26.462L480-506.462l222.154-222.154L728-702.154 506.462-480 728-257.846l-25.846 26.462L480-453.538 257.846-231.384Z" />
+                </svg></a></div>
+        <div id="prf_cnt">
+            <p id="n">HONEY DHIMAN</p>
+            <ul id="ni">
+                <li><b>AREA OF INTREST: </b>WEB TECH</li>
+                <li><b>DOB: </b>02/08/2002</li>
+                <li><b>GENDER: </b>MALE</li>
+                <li><b>HOME TOWN: </b>MEERUT</li>
+                
+            </ul>
+            <div class="cntctinfo">
+                <p id="c2"><b>CONTECT ME:</b></p>
+                <ul id="ci">
+                    <li><b>PHN: </b><a
+                        href="tel:+91 xxxxxxxxxx" >98xxxxx23</a></li>
+                    <li><b>E.MAIL:</b><a href="mailto:mhoneydhiman@gmail.com"> mhoneydhiman@gmail.com</a></li>
+                    <li><a href="social.html">SOCIAL MEDIA</a></li>
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+
+
+    <main>
+        <div class="home">
+
+            <div id="logo"><img src="logo.png"></div>
+
+            <div id="greet">
+                <p>hey...</p>
+                <p>WELCOME TO MY PORTFOLIO</p>
+            </div>
+
+            <div class="bio">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis quam minus suscipit
+                    reiciendis voluptatum laboriosam minima distinctio. Expedita, ipsam! Adipisci et similique
+                    doloremque officiis. Id voluptatum saepe temporibus vero esse iste pariatur, aliquid exercitationem
+                    officiis aut voluptates eligendi ea aspernatur. Assumenda architecto maxime delectus soluta laborum
+                    harum ratione dolorem reiciendis sint, amet aperiam quis ad nostrum quo. Tempore, eius?</p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+
+            <div class="contect">
+                <p id="c">CONTECT:</p>
+                <p><a href="mailto:mhoneydhiman@gmail.com" id="e">mhoneydhiman@gmail.com</a> || <a
+                        href="tel:+91 xxxxxxxxxx" id="m">98xxxxx23</a></p>
+            </div>
+
+            <div class="copyright">
+                <p>(2023-dec)&copy; Honey Dhiman </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+        function showprofile() {
+            const sidebar = document.querySelector('.profilecontent')
+            sidebar.style.display = 'flex'
+        }
+        function hideprofile() {
+            const sidebar = document.querySelector('.profilecontent')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>
